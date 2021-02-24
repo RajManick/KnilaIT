@@ -1,16 +1,16 @@
 //
-//  MusicListCell.swift
-//  Sample
+//  UserListCell.swift
+//  Knil
 //
-//  Created by Manickam T on 07/11/20.
+//  Created by Manickam T on 24/02/21.
 //
 
 import UIKit
 
-class MusicListCell: UITableViewCell {
-    @IBOutlet weak var trackimgView: UIImageView!
-    @IBOutlet weak var trackPrice: UILabel!
-    @IBOutlet weak var trackNameLbl: UILabel!
+class UserListCell: UITableViewCell {
+    @IBOutlet weak var userNameLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
+    @IBOutlet weak var userImgView: UIImageView!
     @IBOutlet weak var BgView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()

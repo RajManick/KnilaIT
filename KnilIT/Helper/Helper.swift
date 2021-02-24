@@ -50,22 +50,13 @@ class Helper {
     
     
     func ShowActivityLoader(controller : UIViewController) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
         Activityview = UIView.init(frame: CGRect(x: 0, y: 0, width: controller.view.frame.size.width, height: controller.view.frame.size.height))
-        Activityview?.backgroundColor = UIColor(
-            red: 0 / 255.0,
-            green: 0 / 255.0,
-            blue: 0 / 255.0,
-            alpha: CGFloat(0.2)
-        )
-        indicator = MaterialLoadingIndicator(frame: CGRect(x:0, y:0, width: 30, height: 30))
-        indicator.indicatorColor = [hexStringToUIColor(hex: "#796BFF").cgColor]
+        Activityview?.backgroundColor = UIColor.clear
+        indicator = MaterialLoadingIndicator(frame: CGRect(x:0, y:0, width: 50, height: 50))
+        indicator.indicatorColor = [hexStringToUIColor(hex: "#942192").cgColor]
         indicator.center = controller.view.center
         Activityview?.addSubview(indicator)
-        appDelegate.window?.rootViewController?.view?.addSubview(Activityview!)
+        controller.view.addSubview(Activityview!)
         indicator.startAnimating()
     }
     
@@ -95,33 +86,35 @@ class Helper {
         Activityview?.removeFromSuperview()
     }
     
-    // Local DB data Creation
+    
+//     Local DB data Creation
     
     func CreateUserDB(userData : UserModelObject) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }
-        
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let Entity = NSEntityDescription.insertNewObject(forEntityName: "User", into: managedContext) as! User
-        Entity.username = userData.username
-        Entity.age = userData.age
-        Entity.password = userData.password
-        Entity.email = userData.email
-        do {
-            try managedContext.save()
-            
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
+        if !self.CheckUserItemExist(userData: userData){
+            let managedContext = appDelegate.persistentContainer.viewContext
+            let Entity = NSEntityDescription.insertNewObject(forEntityName: "User", into: managedContext) as! User
+            Entity.firstname = userData.first_name
+            Entity.lastname = userData.last_name
+            Entity.avatar = userData.avatar
+            Entity.email = userData.email
+            Entity.id = userData.id ?? 0
+            do {
+                try managedContext.save()
+
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
         }
     }
-    
-    func checkUserItemExist(userData : UserModelObject) -> Bool {
+    func CheckUserItemExist(userData : UserModelObject) -> Bool {
         
         let managedContext = (UIApplication.shared.delegate as? AppDelegate)!.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<User>(entityName: "User")
         fetchRequest.fetchLimit =  1
-        fetchRequest.predicate = NSPredicate(format: "email == %@ && password == %@",userData.email!,userData.password!)
+        fetchRequest.predicate = NSPredicate(format: "email == %@",userData.email!)
         do {
             let count  = try managedContext.count(for: fetchRequest)
             if count > 0 {
@@ -134,4 +127,29 @@ class Helper {
             return false
         }
     }
+    
+    
+    func retrieveUserData()  -> [UserModelObject] {
+        var array = [UserModelObject]()
+        let managedContext = (UIApplication.shared.delegate as? AppDelegate)!.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "User")
+        do {
+            let result = try managedContext.fetch(fetchRequest)
+            for data in result {
+                let user = UserModelObject()
+                user.first_name = (data.value(forKey: "firstname") as? String)!
+                user.last_name = (data.value(forKey: "lastname") as? String)!
+                user.email = (data.value(forKey: "email") as? String)!
+                user.id = (data.value(forKey: "id") as? Int64)!
+                user.avatar = (data.value(forKey: "avatar") as? String)!
+                array.append(user)
+            }
+        } catch let error as NSError {
+            array = []
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        return array
+    }
+    
 }
+

@@ -1,23 +1,24 @@
 //
-//  MusicDetailViewController.swift
-//  Sample
+//  UserDetailViewController.swift
+//  KnilIT
 //
-//  Created by Manickam T on 07/11/20.
+//  Created by Manickam T on 24/02/21.
 //
 
 import UIKit
 
 
 
-class MusicDetailViewController: UIViewController {
+class UserDetailViewController: UIViewController {
 
-    var musicData : MusicModelObject!
-    var MusicDetailArr : Array<String>!
+    var userData : UserModelObject!
     
-    @IBOutlet weak var trackImgView: UIImageView!{
+    @IBOutlet weak var UserImgView: UIImageView!{
         didSet{
-            trackImgView.layer.cornerRadius = trackImgView.frame.size.height/2
-            trackImgView.clipsToBounds = true
+            UserImgView.layer.cornerRadius = UserImgView.frame.size.height/2
+            UserImgView.layer.borderWidth = 2.0
+            UserImgView.layer.borderColor = UIColor.white.cgColor
+            UserImgView.clipsToBounds = true
         }
     }
     
@@ -31,65 +32,47 @@ class MusicDetailViewController: UIViewController {
     }
     
     func SetupUI() {
-        self.title = "Music Detail"
-        myTblView.register(UINib(nibName: "MusicDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "MusicDetailTableViewCell")
-        Helper.app.setURLImageFor(self.trackImgView, url: musicData.artworkUrl100, placeHolderImage: "sample")
+        self.title = "User Detail"
+        myTblView.register(UINib(nibName: "UserDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "UserDetailTableViewCell")
+        myTblView.tableFooterView = UIView()
+    
     }
     func SetupModel() {
-        
+        Helper.app.setURLImageFor(self.UserImgView, url: userData.avatar, placeHolderImage: "sample_profile")
     }
     func LoadModel() {
         self.myTblView.reloadData()
     }
     
 }
-extension MusicDetailViewController : UITableViewDelegate,UITableViewDataSource{
+extension UserDetailViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell : MusicDetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: "MusicDetailTableViewCell") as! MusicDetailTableViewCell
+        let cell : UserDetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: "UserDetailTableViewCell") as! UserDetailTableViewCell
         
         if  indexPath.row % 2 == 0 {
-            cell.detailBGView.backgroundColor = Helper.app.hexStringToUIColor(hex: "796BFF")
+            cell.detailBGView.backgroundColor = Helper.app.hexStringToUIColor(hex: "942192")
         }else{
             cell.detailBGView.backgroundColor = .lightGray
         }
         cell.detailBGView.layer.cornerRadius = 10.0
         cell.detailBGView.clipsToBounds = true
-        
-        if indexPath.row == 0{
-            cell.detailLbl.text = "Title : \(musicData.trackName ?? "")"
-        }else if indexPath.row == 1{
-            cell.detailLbl.text = "Price : \(musicData.trackPrice ?? "")"
+         if indexPath.row == 0{
+            cell.detailLbl.text = "User Id : \(userData.id ?? 0)"
         }
-        else if indexPath.row == 2{
-            cell.detailLbl.text = "artistName : \(musicData.artistName ?? "")"
+        else if indexPath.row == 1{
+            cell.detailLbl.text = "First Name : \(userData.first_name ?? "")"
+        }else if indexPath.row == 2{
+            cell.detailLbl.text = "Last Name : \(userData.last_name ?? "")"
         }
         else if indexPath.row == 3{
-            cell.detailLbl.text = "releaseDate : \(musicData.releaseDate ?? "")"
-        }
-        else if indexPath.row == 4{
-            cell.detailLbl.text = "primaryGenreName : \(musicData.primaryGenreName ?? "")"
-        }
-        else if indexPath.row == 5{
-            cell.detailLbl.text = "country : \(musicData.country ?? "")"
-        }
-        else if indexPath.row == 6{
-            cell.detailLbl.text = "currency : \(musicData.currency ?? "")"
+            cell.detailLbl.text = "Email : \(userData.email ?? "")"
         }
         return cell
     }
-    
-    /*    var artworkUrl100: String? = ""
-     var trackPrice: String? = ""
-     var artistName: String? = ""
-     var artistViewUrl: String? = ""
-     var releaseDate: String? = ""
-     var primaryGenreName: String? = ""
-     var country: String? = ""
-     var currency: String? = ""**/
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80

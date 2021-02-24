@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,19 @@
 		15BEAEEC25E5FFC40071B512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BEAEEA25E5FFC40071B512 /* LaunchScreen.storyboard */; };
 		15BEAEF725E5FFC40071B512 /* KnilITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAEF625E5FFC40071B512 /* KnilITTests.swift */; };
 		15BEAF0225E5FFC40071B512 /* KnilITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF0125E5FFC40071B512 /* KnilITUITests.swift */; };
+		15BEAF2625E600DD0071B512 /* UserModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF2525E600DD0071B512 /* UserModelObject.swift */; };
+		15BEAF2D25E6013D0071B512 /* UserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BEAF2B25E6013D0071B512 /* UserListCell.xib */; };
+		15BEAF2E25E6013D0071B512 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF2C25E6013D0071B512 /* UserListCell.swift */; };
+		15BEAF3425E601560071B512 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF3325E601560071B512 /* Helper.swift */; };
+		15BEAF4A25E606C20071B512 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF4925E606C20071B512 /* UserDetailTableViewCell.swift */; };
+		15BEAF4F25E606CF0071B512 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF4E25E606CF0071B512 /* UserDetailViewController.swift */; };
+		15BEAF5A25E6076A0071B512 /* UserDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BEAF5925E6076A0071B512 /* UserDetailTableViewCell.xib */; };
+		15BEAF6325E610770071B512 /* knilIT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF6125E610770071B512 /* knilIT.xcdatamodeld */; };
+		15BEAF9825E613420071B512 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF9625E613420071B512 /* User+CoreDataClass.swift */; };
+		15BEAF9925E613420071B512 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEAF9725E613420071B512 /* User+CoreDataProperties.swift */; };
+		7D33FFBB7BD04B8CAB07469A /* Pods_KnilIT_KnilITUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A52151BAFC1CAF61E8C5C72 /* Pods_KnilIT_KnilITUITests.framework */; };
+		83435526932DA89EFE8079CB /* Pods_KnilIT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C838B5085FDDE7EC40D150DF /* Pods_KnilIT.framework */; };
+		F3330DDF03E485078AD86667 /* Pods_KnilITTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9494B809BC485430E5F1E32F /* Pods_KnilITTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15BEAEDC25E5FFC30071B512 /* KnilIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnilIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BEAEDC25E5FFC30071B512 /* KnilaIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnilaIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BEAEDF25E5FFC30071B512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15BEAEE125E5FFC30071B512 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		15BEAEE325E5FFC30071B512 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,25 @@
 		15BEAEFD25E5FFC40071B512 /* KnilITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnilITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BEAF0125E5FFC40071B512 /* KnilITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnilITUITests.swift; sourceTree = "<group>"; };
 		15BEAF0325E5FFC40071B512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15BEAF2525E600DD0071B512 /* UserModelObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelObject.swift; sourceTree = "<group>"; };
+		15BEAF2B25E6013D0071B512 /* UserListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserListCell.xib; sourceTree = "<group>"; };
+		15BEAF2C25E6013D0071B512 /* UserListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		15BEAF3325E601560071B512 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		15BEAF4925E606C20071B512 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		15BEAF4E25E606CF0071B512 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		15BEAF5925E6076A0071B512 /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailTableViewCell.xib; sourceTree = "<group>"; };
+		15BEAF6225E610770071B512 /* knilIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = knilIT.xcdatamodel; sourceTree = "<group>"; };
+		15BEAF9625E613420071B512 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		15BEAF9725E613420071B512 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		47832F7A901007B33E998E83 /* Pods-KnilIT-KnilITUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilIT-KnilITUITests.debug.xcconfig"; path = "Target Support Files/Pods-KnilIT-KnilITUITests/Pods-KnilIT-KnilITUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		663E60716E5440C9F07ED13A /* Pods-KnilIT-KnilITUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilIT-KnilITUITests.release.xcconfig"; path = "Target Support Files/Pods-KnilIT-KnilITUITests/Pods-KnilIT-KnilITUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C83C32C9E34F2EE47413FCC /* Pods-KnilIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilIT.release.xcconfig"; path = "Target Support Files/Pods-KnilIT/Pods-KnilIT.release.xcconfig"; sourceTree = "<group>"; };
+		8A52151BAFC1CAF61E8C5C72 /* Pods_KnilIT_KnilITUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnilIT_KnilITUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9494B809BC485430E5F1E32F /* Pods_KnilITTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnilITTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3D02DC83951DB81157FD9D /* Pods-KnilITTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilITTests.debug.xcconfig"; path = "Target Support Files/Pods-KnilITTests/Pods-KnilITTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C838B5085FDDE7EC40D150DF /* Pods_KnilIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnilIT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF04147D86128D6D58C22348 /* Pods-KnilIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilIT.debug.xcconfig"; path = "Target Support Files/Pods-KnilIT/Pods-KnilIT.debug.xcconfig"; sourceTree = "<group>"; };
+		F6E8395FEBA15AE8A9630482 /* Pods-KnilITTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilITTests.release.xcconfig"; path = "Target Support Files/Pods-KnilITTests/Pods-KnilITTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83435526932DA89EFE8079CB /* Pods_KnilIT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3330DDF03E485078AD86667 /* Pods_KnilITTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D33FFBB7BD04B8CAB07469A /* Pods_KnilIT_KnilITUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,13 +118,15 @@
 				15BEAEF525E5FFC40071B512 /* KnilITTests */,
 				15BEAF0025E5FFC40071B512 /* KnilITUITests */,
 				15BEAEDD25E5FFC30071B512 /* Products */,
+				4AC5BFB4CDF81F668BAF0234 /* Pods */,
+				23E4DF5F44AC879952416698 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		15BEAEDD25E5FFC30071B512 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15BEAEDC25E5FFC30071B512 /* KnilIT.app */,
+				15BEAEDC25E5FFC30071B512 /* KnilaIT.app */,
 				15BEAEF225E5FFC40071B512 /* KnilITTests.xctest */,
 				15BEAEFD25E5FFC40071B512 /* KnilITUITests.xctest */,
 			);
@@ -99,13 +136,19 @@
 		15BEAEDE25E5FFC30071B512 /* KnilIT */ = {
 			isa = PBXGroup;
 			children = (
+				15BEAF8225E612030071B512 /* Resource */,
+				15BEAF3225E601510071B512 /* Helper */,
+				15BEAF2A25E6012D0071B512 /* Cell */,
+				15BEAF2425E600D00071B512 /* Model */,
 				15BEAEDF25E5FFC30071B512 /* AppDelegate.swift */,
 				15BEAEE125E5FFC30071B512 /* SceneDelegate.swift */,
 				15BEAEE325E5FFC30071B512 /* ViewController.swift */,
+				15BEAF4E25E606CF0071B512 /* UserDetailViewController.swift */,
 				15BEAEE525E5FFC30071B512 /* Main.storyboard */,
 				15BEAEE825E5FFC40071B512 /* Assets.xcassets */,
 				15BEAEEA25E5FFC40071B512 /* LaunchScreen.storyboard */,
 				15BEAEED25E5FFC40071B512 /* Info.plist */,
+				15BEAF6125E610770071B512 /* knilIT.xcdatamodeld */,
 			);
 			path = KnilIT;
 			sourceTree = "<group>";
@@ -128,6 +171,65 @@
 			path = KnilITUITests;
 			sourceTree = "<group>";
 		};
+		15BEAF2425E600D00071B512 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15BEAF2525E600DD0071B512 /* UserModelObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15BEAF2A25E6012D0071B512 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15BEAF2C25E6013D0071B512 /* UserListCell.swift */,
+				15BEAF2B25E6013D0071B512 /* UserListCell.xib */,
+				15BEAF4925E606C20071B512 /* UserDetailTableViewCell.swift */,
+				15BEAF5925E6076A0071B512 /* UserDetailTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		15BEAF3225E601510071B512 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				15BEAF3325E601560071B512 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		15BEAF8225E612030071B512 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				15BEAF9625E613420071B512 /* User+CoreDataClass.swift */,
+				15BEAF9725E613420071B512 /* User+CoreDataProperties.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		23E4DF5F44AC879952416698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C838B5085FDDE7EC40D150DF /* Pods_KnilIT.framework */,
+				8A52151BAFC1CAF61E8C5C72 /* Pods_KnilIT_KnilITUITests.framework */,
+				9494B809BC485430E5F1E32F /* Pods_KnilITTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AC5BFB4CDF81F668BAF0234 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF04147D86128D6D58C22348 /* Pods-KnilIT.debug.xcconfig */,
+				6C83C32C9E34F2EE47413FCC /* Pods-KnilIT.release.xcconfig */,
+				47832F7A901007B33E998E83 /* Pods-KnilIT-KnilITUITests.debug.xcconfig */,
+				663E60716E5440C9F07ED13A /* Pods-KnilIT-KnilITUITests.release.xcconfig */,
+				BE3D02DC83951DB81157FD9D /* Pods-KnilITTests.debug.xcconfig */,
+				F6E8395FEBA15AE8A9630482 /* Pods-KnilITTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15BEAF0625E5FFC40071B512 /* Build configuration list for PBXNativeTarget "KnilIT" */;
 			buildPhases = (
+				11586AA764C48642C56E81F8 /* [CP] Check Pods Manifest.lock */,
 				15BEAED825E5FFC30071B512 /* Sources */,
 				15BEAED925E5FFC30071B512 /* Frameworks */,
 				15BEAEDA25E5FFC30071B512 /* Resources */,
+				6CC1E59F522CB6A0BA6BE42C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,13 +249,14 @@
 			);
 			name = KnilIT;
 			productName = KnilIT;
-			productReference = 15BEAEDC25E5FFC30071B512 /* KnilIT.app */;
+			productReference = 15BEAEDC25E5FFC30071B512 /* KnilaIT.app */;
 			productType = "com.apple.product-type.application";
 		};
 		15BEAEF125E5FFC40071B512 /* KnilITTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15BEAF0925E5FFC40071B512 /* Build configuration list for PBXNativeTarget "KnilITTests" */;
 			buildPhases = (
+				CFD2157D053D2DC12D955080 /* [CP] Check Pods Manifest.lock */,
 				15BEAEEE25E5FFC40071B512 /* Sources */,
 				15BEAEEF25E5FFC40071B512 /* Frameworks */,
 				15BEAEF025E5FFC40071B512 /* Resources */,
@@ -170,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15BEAF0C25E5FFC40071B512 /* Build configuration list for PBXNativeTarget "KnilITUITests" */;
 			buildPhases = (
+				2A9B96CBAE73335082D8BA6D /* [CP] Check Pods Manifest.lock */,
 				15BEAEF925E5FFC40071B512 /* Sources */,
 				15BEAEFA25E5FFC40071B512 /* Frameworks */,
 				15BEAEFB25E5FFC40071B512 /* Resources */,
+				317A50C4CE9252AD7B80FE43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +341,8 @@
 				15BEAEEC25E5FFC40071B512 /* LaunchScreen.storyboard in Resources */,
 				15BEAEE925E5FFC40071B512 /* Assets.xcassets in Resources */,
 				15BEAEE725E5FFC30071B512 /* Main.storyboard in Resources */,
+				15BEAF5A25E6076A0071B512 /* UserDetailTableViewCell.xib in Resources */,
+				15BEAF2D25E6013D0071B512 /* UserListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +362,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11586AA764C48642C56E81F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnilIT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A9B96CBAE73335082D8BA6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnilIT-KnilITUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		317A50C4CE9252AD7B80FE43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnilIT-KnilITUITests/Pods-KnilIT-KnilITUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnilIT-KnilITUITests/Pods-KnilIT-KnilITUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnilIT-KnilITUITests/Pods-KnilIT-KnilITUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC1E59F522CB6A0BA6BE42C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnilIT/Pods-KnilIT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnilIT/Pods-KnilIT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnilIT/Pods-KnilIT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFD2157D053D2DC12D955080 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnilITTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15BEAED825E5FFC30071B512 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,7 +472,15 @@
 			files = (
 				15BEAEE425E5FFC30071B512 /* ViewController.swift in Sources */,
 				15BEAEE025E5FFC30071B512 /* AppDelegate.swift in Sources */,
+				15BEAF2625E600DD0071B512 /* UserModelObject.swift in Sources */,
+				15BEAF2E25E6013D0071B512 /* UserListCell.swift in Sources */,
+				15BEAF9825E613420071B512 /* User+CoreDataClass.swift in Sources */,
+				15BEAF6325E610770071B512 /* knilIT.xcdatamodeld in Sources */,
 				15BEAEE225E5FFC30071B512 /* SceneDelegate.swift in Sources */,
+				15BEAF9925E613420071B512 /* User+CoreDataProperties.swift in Sources */,
+				15BEAF4F25E606CF0071B512 /* UserDetailViewController.swift in Sources */,
+				15BEAF4A25E606C20071B512 /* UserDetailTableViewCell.swift in Sources */,
+				15BEAF3425E601560071B512 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +653,7 @@
 		};
 		15BEAF0725E5FFC40071B512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF04147D86128D6D58C22348 /* Pods-KnilIT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,7 +664,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.knila.KnilIT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KnilaIT;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,6 +672,7 @@
 		};
 		15BEAF0825E5FFC40071B512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C83C32C9E34F2EE47413FCC /* Pods-KnilIT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,7 +683,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.knila.KnilIT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KnilaIT;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,6 +691,7 @@
 		};
 		15BEAF0A25E5FFC40071B512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3D02DC83951DB81157FD9D /* Pods-KnilITTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +713,7 @@
 		};
 		15BEAF0B25E5FFC40071B512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E8395FEBA15AE8A9630482 /* Pods-KnilITTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +735,7 @@
 		};
 		15BEAF0D25E5FFC40071B512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47832F7A901007B33E998E83 /* Pods-KnilIT-KnilITUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +755,7 @@
 		};
 		15BEAF0E25E5FFC40071B512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663E60716E5440C9F07ED13A /* Pods-KnilIT-KnilITUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -587,6 +813,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		15BEAF6125E610770071B512 /* knilIT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				15BEAF6225E610770071B512 /* knilIT.xcdatamodel */,
+			);
+			currentVersion = 15BEAF6225E610770071B512 /* knilIT.xcdatamodel */;
+			path = knilIT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 15BEAED425E5FFC30071B512 /* Project object */;
 }

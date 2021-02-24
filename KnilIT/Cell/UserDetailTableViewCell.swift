@@ -1,13 +1,13 @@
 //
-//  MusicDetailTableViewCell.swift
-//  Sample
+//  UserDetailTableViewCell.swift
+//  KnilIT
 //
-//  Created by Manickam T on 07/11/20.
+//  Created by Manickam T on 24/02/21.
 //
 
 import UIKit
 
-class MusicDetailTableViewCell: UITableViewCell {
+class UserDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var detailBGView: UIView!
     @IBOutlet weak var detailLbl: UILabel!
