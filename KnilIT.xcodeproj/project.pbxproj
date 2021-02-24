@@ -70,8 +70,8 @@
 		15BEAF4E25E606CF0071B512 /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		15BEAF5925E6076A0071B512 /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailTableViewCell.xib; sourceTree = "<group>"; };
 		15BEAF6225E610770071B512 /* knilIT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = knilIT.xcdatamodel; sourceTree = "<group>"; };
-		15BEAF9625E613420071B512 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		15BEAF9725E613420071B512 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		15BEAF9625E613420071B512 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "KnilIT/User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		15BEAF9725E613420071B512 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "KnilIT/User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		47832F7A901007B33E998E83 /* Pods-KnilIT-KnilITUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilIT-KnilITUITests.debug.xcconfig"; path = "Target Support Files/Pods-KnilIT-KnilITUITests/Pods-KnilIT-KnilITUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		663E60716E5440C9F07ED13A /* Pods-KnilIT-KnilITUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilIT-KnilITUITests.release.xcconfig"; path = "Target Support Files/Pods-KnilIT-KnilITUITests/Pods-KnilIT-KnilITUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6C83C32C9E34F2EE47413FCC /* Pods-KnilIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnilIT.release.xcconfig"; path = "Target Support Files/Pods-KnilIT/Pods-KnilIT.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +136,6 @@
 		15BEAEDE25E5FFC30071B512 /* KnilIT */ = {
 			isa = PBXGroup;
 			children = (
-				15BEAF8225E612030071B512 /* Resource */,
 				15BEAF3225E601510071B512 /* Helper */,
 				15BEAF2A25E6012D0071B512 /* Cell */,
 				15BEAF2425E600D00071B512 /* Model */,
@@ -149,6 +148,8 @@
 				15BEAEEA25E5FFC40071B512 /* LaunchScreen.storyboard */,
 				15BEAEED25E5FFC40071B512 /* Info.plist */,
 				15BEAF6125E610770071B512 /* knilIT.xcdatamodeld */,
+				15BEAF9625E613420071B512 /* User+CoreDataClass.swift */,
+				15BEAF9725E613420071B512 /* User+CoreDataProperties.swift */,
 			);
 			path = KnilIT;
 			sourceTree = "<group>";
@@ -196,15 +197,6 @@
 				15BEAF3325E601560071B512 /* Helper.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		15BEAF8225E612030071B512 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				15BEAF9625E613420071B512 /* User+CoreDataClass.swift */,
-				15BEAF9725E613420071B512 /* User+CoreDataProperties.swift */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		23E4DF5F44AC879952416698 /* Frameworks */ = {
